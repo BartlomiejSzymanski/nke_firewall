@@ -6,12 +6,8 @@ Repository of PZSP2 project.
 ## TL;DR
 Raspberry Firewall for SLMP and MODBUS protocols along with interactive Web interface.
 
-
-
-
 ## Short Presentation video
-
-
+[![Software presentation](https://youtu.be/HWYsOOFY5FY)](https://youtu.be/HWYsOOFY5FY)
 
 
 ## Installation
