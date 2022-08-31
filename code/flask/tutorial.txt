@@ -1,0 +1,27 @@
+
+TUTORIAL:
+https://blog.logrocket.com/build-deploy-flask-app-using-docker/
+
+WYMAGANIA:
+1. Python >= 3.8
+
+1. Uruchom komendę:
+        sh setup_frontend.sh
+uruchomi się plik instalujacy podstawowe pakiety
+2.Export ustawien flaska jest domyslnie w setup_frontend.sh, jesli wyjdzie error, to ponizej w "KOMENDY z palca"
+
+
+KOMENDY z palca:
+## Flask
+pip3 install flask
+
+export FLASK_APP=hello.py
+export FLASK_ENV=development
+flask run
+
+ODPOWIEDZIALNOŚĆ PLIKÓW:
+setup_frontend.sh - instalacja podstawowych pakietów
+view.py - apka serwująca (API)
+index.html - układ strony / 
+requirements - zainstalowane pakiety potrzebne do uruchomienia
+tutorial.txt - ;)

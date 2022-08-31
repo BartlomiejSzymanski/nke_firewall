@@ -1,0 +1,32 @@
+{
+  "rules": [
+    {
+      "destination_address": "ANY",
+      "destination_port": "ANY",
+      "id": 1,
+      "is_active": "false",
+      "name": "Allow all TCP traffic",
+      "protocol": "TCP",
+      "source_address": "ANY",
+      "source_port": "ANY"
+    },
+    {
+      "command": "Write Multiple Registers",
+      "end_register": "100",
+      "id": 2,
+      "is_active": "false",
+      "name": "Accept MODBUS TCP writes from 0 to 100 on single registers",
+      "protocol": "MODBUS",
+      "start_register": "0"
+    },
+    {
+      "command": "Read Holding Registers",
+      "end_register": "100",
+      "id": 3,
+      "is_active": "true",
+      "name": "Accept MODBUS TCP reads from 0 to 100 on single registers",
+      "protocol": "MODBUS",
+      "start_register": "0"
+    }
+  ]
+}

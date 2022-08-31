@@ -1,0 +1,94 @@
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/addRuleModal.css') }}">
+{% endblock %}
+{% block modal %}
+    <div id="addRuleModal" class="modal">
+        <form class="content">
+
+            <h1 class="modalTitle">Add Rule</h1>
+
+            <div class="inputs">
+                <div class="inputWrapper">
+                    <label for="name">Name</label>
+                    <input name="name" type="text" id="rule_name" class="input">
+                </div>
+                <div class="inputWrapper">
+                    <label for="protocol">Protocol</label>
+                    <select name="protocol" id="rule_protocol" class="input" onchange="triggerAddProtocolField(this.value)">
+                        <option disabled selected value> -- select an option -- </option>
+                        <option value="MODBUS">MODBUS</option>
+                        <option value="TCP">TCP</option>
+                        <option value="SLMP">SLMP</option>
+                    </select>
+                </div>
+                <div id="add_TCP" class="ruleFormField">
+                    <div class="inputWrapper">
+                        <label to="source_address">Source Address</label>
+                        <input label="source_address" type="text" id="TCP_rule_source_address" class="input">
+                    </div>
+                    <div class="inputWrapper">
+                        <label to="destination_address">Destination Address</label>
+                        <input label="destination_address" type="text" id="TCP_rule_destination_address" class="input">
+                    </div>
+                    <div class="inputWrapper">
+                        <label to="source_port">Source Port</label>
+                        <input label="source_port" type="text" id="TCP_rule_source_port" class="input">
+                    </div>
+                    <div class="inputWrapper">
+                        <label to="destination_port">Destination Port</label>
+                        <input label="destination_port" type="text" id="TCP_rule_destination_port" class="input" >
+                    </div>
+                </div>
+                <div id="add_MODBUS" class="ruleFormField">
+                    <label for="command">Command</label>
+                    <select name="command" id="MODBUS_rule_command" class="input">
+                        <option disabled selected value> -- select an option -- </option>
+                        <option value="Read Coils">Read Coils</option>
+                        <option value="Read Discrete Input">Read Discrete Input</option>
+                        <option value="Read Holding Registers">Read Holding Registers</option>
+                        <option value="Read Input Registers">Read Input Registers</option>
+                        <option value="Write Single Coil">Write Single Coil</option>
+                        <option value="Write Single Registers">Write Single Registers</option>
+                        <option value="Write Multiple Coils">Write Multiple Coils</option>
+                        <option value="Write Multiple Registers">Write Multiple Registers</option>
+                        <option value="Read/Write Multiple Registers">Read/Write Multiple Registers</option>
+                    </select>
+                    <div class="inputWrapper">
+                        <label to="start_register">Start Register</label>
+                        <input label="start_register" type="text" id="rule_start_register" class="input">
+                    </div>
+                    <div class="inputWrapper">
+                        <label to="end_register">End Register</label>
+                        <input label="end_register" type="text" id="rule_end_register" class="input">
+                    </div>
+                </div>
+                <div id="add_SLMP" class="ruleFormField">
+                    <div class="inputWrapper">
+                        <label for="command">Command</label>
+                        <select name="command" id="SLMP_rule_command" class="input">
+                            <option disabled selected value> -- select an option -- </option>
+                            <option value="Read">Read</option>
+                            <option value="Write">Write</option>
+                        </select>
+                    </div>
+                    <div class="inputWrapper">
+                        <label to="subcommand">Subcommand</label>
+                        <input label="subcommand" type="text" id="SLMP_rule_subcommand" class="input">
+                    </div>
+                    <div class="inputWrapper">
+                        <label to="start_register">Start Register</label>
+                        <input label="start_register" type="text" id="SLMP_rule_start_register" class="input">
+                    </div>
+                    <div class="inputWrapper">
+                        <label to="end_register">End Register</label>
+                        <input label="end_register" type="text" id="SLMP_rule_end_register" class="input">
+                    </div>
+                </div>
+            </div>     
+            <div class="buttons modalButtons">
+                <button id="confirmAddRule" class="button" type="submit">Add</button>
+                <button id="closeAddRuleModal" class="button" type="button">Cancel</button>
+            </div>
+        </form>
+    </div>
+{% endblock %}

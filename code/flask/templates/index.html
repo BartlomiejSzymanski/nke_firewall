@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% block head %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+    {% endblock %}
+    <title>Firewall</title>
+</head>
+<body>
+    <div class="wrapper">
+
+        <h1 class="title">Firewall</h1>
+
+        <ul id="rules" class="box">
+            {% include 'rules.html' %}
+        </ul>
+
+        <div class="buttons">
+            {% include 'buttons.html' %}
+        </div>
+
+        <div class="box">
+            <ul id="logs" class="logs">
+                <p>
+                    {% include 'logs.html' %}
+                </p>
+            </ul>
+            <div class="gradient"/>
+        </div>
+
+    </div>
+    {% include 'addRuleModal.html' %}
+    
+    <script src="{{ url_for('static', filename='js/addRule.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/ruleCheck.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/ruleForm.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/triggerAll.js') }}"></script>
+</body>
+</html>
