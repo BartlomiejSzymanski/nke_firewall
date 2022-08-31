@@ -7,7 +7,10 @@ Repository of PZSP2 project.
 Raspberry Firewall for SLMP and MODBUS protocols along with interactive Web interface.
 
 ## Short Presentation video
-[![Software presentation](https://youtu.be/HWYsOOFY5FY)](https://youtu.be/HWYsOOFY5FY)
+
+
+https://user-images.githubusercontent.com/83136462/187745732-8ac41639-5892-4b45-9fd8-6a9d0099a2af.mov
+
 
 
 ## Installation
@@ -92,11 +95,13 @@ To test, run as superuser command **coverage run --source=. -m unittest discover
 Support availible exclusively on demand as the product comes with no warranty ("as is"). If having minor issues feel free to contact corresponding author.
 
 ## Authors and acknowledgment
-Corresponding author: Richard Staszkiewicz (richard.staszkiewicz@gmail.com)
+Corresponding author: 
+Bartłomiej Szymański (bartek.szymanski9204@gmail.com)
+Richard Staszkiewicz (richard.staszkiewicz@gmail.com)
 Szymon Dyszewski
 Jakub Jabłoński
 Bartłomiej Kosiński
-Bartłomiej Szymański
+
 
 *We would like to thank Professor Krzysztof Cabaj for inspiration and firm grip on project functionality aspects. Additionaly we acknowledge our grattitude towards PZSP2 expert panel, namely Jarosław Chudziak, Tomasz Kruk and Robert Nowak, for their valuable remarks along with our PZSP2 coordinator, Klara Borowa, for her personal engagement and help with timing management.*
 
@@ -104,4 +109,4 @@ Bartłomiej Szymański
 The project is availible under MIT open license.
 
 ## Project status
-Projects aims for improvment of the infrastructure from router to switch.
+Projects aims for improvment of the infrastructure from router to switch. Currently no longer in development.
