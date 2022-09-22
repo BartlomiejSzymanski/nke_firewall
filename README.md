@@ -4,7 +4,9 @@
 Repository of PZSP2 project.
 
 ## TL;DR
-Raspberry Firewall for SLMP and MODBUS protocols along with interactive Web interface.
+Raspberry Firewall for SLMP and MODBUS protocols along with interactive Web interface. This package as a whole enables  administrators to selectively allow reading and writing from existing registers of the industrial system. 
+
+<img width="728" alt="Screenshot 2022-09-22 at 15 48 34" src="https://user-images.githubusercontent.com/83136462/191764633-dba7659a-2cfb-4e1a-9dec-90d0c8c85a93.png">
 
 ## Short Presentation video
 
