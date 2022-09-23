@@ -2,6 +2,11 @@
 ![nke](https://user-images.githubusercontent.com/83136462/187739878-e31f592d-5b07-496c-a6c1-373b4162c519.png)
 
 Repository of PZSP2 (Team Project #2) project. Our team- NKE consisted of four contributors:
+Bartłomiej Szymański (bartek.szymanski9204@gmail.com) 
+Richard Staszkiewicz (richard.staszkiewicz@gmail.com) 
+Szymon Dyszewski 
+Jakub Jabłoński 
+Bartosz Kosiński
 
 
 ## TL;DR
@@ -109,7 +114,7 @@ Bartłomiej Szymański (bartek.szymanski9204@gmail.com)
 Richard Staszkiewicz (richard.staszkiewicz@gmail.com)
 Szymon Dyszewski
 Jakub Jabłoński
-Bartłomiej Kosiński
+Bartosz Kosiński
 
 
 *We would like to thank Professor Krzysztof Cabaj for inspiration and firm grip on project functionality aspects. Additionaly we acknowledge our grattitude towards PZSP2 expert panel, namely Jarosław Chudziak, Tomasz Kruk and Robert Nowak, for their valuable remarks along with our PZSP2 coordinator, Klara Borowa, for her personal engagement and help with timing management.*
