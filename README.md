@@ -8,7 +8,7 @@ Raspberry Firewall for SLMP and MODBUS protocols along with interactive Web inte
 
 <img width="1193" alt="Screenshot 2022-09-22 at 15 49 50" src="https://user-images.githubusercontent.com/83136462/191764935-1097f215-f4e5-4e7b-a725-4a93f97b02a9.png">
 
-Software structure comprises two main modules, separated from each other for additional safety. In case od DoS attacks, the web interface (CONF module) is the only one vulnerable to shutdown. The firewall itself (FIRE module) intercepts the system FORWARD queue and filters unwanted packets. Any update within the rules is being signalised to the Firewall module using a "named pipeline", allowing for complete separation of the FIRE and CONF modules.
+Software structure comprises two main modules, separated from each other for additional safety. In case od DoS attacks, the web interface (CONF module) is the only one vulnerable to shutdown. The firewall itself (FIRE module) intercepts the system FORWARD queue and filters unwanted packets. Any update within the rules is being signalised to the Firewall module using a "named pipeline", allowing for complete process separation of the FIRE and CONF modules.
 
 <img width="1010" alt="Screenshot 2022-09-22 at 15 50 28" src="https://user-images.githubusercontent.com/83136462/191765074-42ca7bde-d280-405c-9bcb-178b6d4461f7.png">
 
