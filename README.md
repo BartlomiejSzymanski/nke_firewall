@@ -1,7 +1,7 @@
 # PZSP2 Firewall
 ![nke](https://user-images.githubusercontent.com/83136462/187739878-e31f592d-5b07-496c-a6c1-373b4162c519.png)
 
-Repository of PZSP2 project.
+Repository of PZSP2 (Team Project #2) project.
 
 ## TL;DR
 Raspberry Firewall for SLMP and MODBUS protocols along with interactive Web interface. This package as a whole enables  administrators to selectively allow reading and writing from existing registers of the industrial system. 
